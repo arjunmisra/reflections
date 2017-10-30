@@ -1,0 +1,109 @@
+git log
+
+It will show the entire log of the project
+
+git log --graph --oneline master coins easy_mode
+
+This will show a graphical representation of how the commits were made and the branches respectively.
+
+git diff <id1> <id2>
+
+it will show the difference between the two git commit ids.
+If i dont give any arguments to git diff, then it will show me the changes i made in in the working directory.So i would know what modifications i made and what lines of code i will be commiting!
+
+git diff --staged
+
+this will show me the difference between the files present in the staging area and the working directory!
+
+git clone
+
+It creates a clone of the repository
+
+
+
+Git Errors and Warnings Solution
+
+
+Should not be doing an octopus
+
+Octopus is a strategy Git uses to combine many different versions of code together. This message can appear if you try to use this strategy in an inappropriate situation.
+
+You are in 'detached HEAD' state
+
+HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
+
+Panic! (the 'impossible' happened)
+
+This is a real error message, but it’s not output by Git. Instead it’s output by GHC, the compiler for a programming language called Haskell. It’s reserved for particularly surprising errors!
+
+
+
+
+git checkout
+
+If you type git checkout <id> then you will bring your project in that version of the id.
+
+git init
+
+It initiates a new git repository. It converts your normal project folder to git repository!
+
+git status
+
+It gives the status of the repository
+
+git add 
+
+This adds a file to the staging area from where the files are committed to the repository.
+
+git commit 
+
+It will open sublime for you. You can enter the message and then close it. The message will automatically be added to your commits.
+
+git reset
+
+if i want to remove any changes i made in the working directory or the staging area, then i run this command. This is irreversible.
+
+
+
+	BRANCH
+
+
+
+git branch
+
+This will show all the branches in the repository.
+
+git branch easy_mode
+
+This will create a branch of the master. You can check all the branches using <git branch>
+
+git checkout easy_mode
+
+This will change the current branch to easy_mode
+
+
+git merge <branch_name 1> <branch name 2>
+
+Giving this command, will merge two branches together and you will get features of both the branches.
+If there if is a conflict, then you can make the changes in the file.
+Then , 1) git status shows whats modified. 2) git add <file_name> adds the file to the staging area 3)git commit , commits the changes!
+
+
+
+Remote
+
+This is a section that communicates with the github repository!
+
+git remote
+
+It shows any remotes available.
+
+git remote add <name>
+
+We can create a remote . Its standard to name it as origin
+
+
+
+
+
+
